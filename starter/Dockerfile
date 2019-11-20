@@ -1,8 +1,10 @@
 FROM registry.gz.cvte.cn/ccloud/elastalert-rest:v0.2.1-4dd50dc3
 
-COPY ./starter/start.sh /app/elastalert-rest
+COPY ./starter/start.sh /app/
 
-WORKDIR /app/elastalert-rest
+RUN chmod +x /app/start.sh
 
-ENTRYPOINT["/app/elastalert-rest/start.sh"]
+WORKDIR /app/
+
+ENTRYPOINT ["/app/start.sh"]
 
