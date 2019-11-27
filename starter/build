@@ -1,3 +1,3 @@
-docker build --pull=true --no-cache=true -f starter/Dockerfile -t registry.gz.cvte.cn/ccloud/elastalert-rest-starter:v0.2.1-4dd50dc3 .
+docker build --pull=true --no-cache=true -f starter/Dockerfile -t 13329252585/elastalert-rest-starter:v0.2.1-e58f1bda .
 
-docker push registry.gz.cvte.cn/ccloud/elastalert-rest-starter:v0.2.1-4dd50dc3
+docker push 13329252585/elastalert-rest-starter:v0.2.1-e58f1bda

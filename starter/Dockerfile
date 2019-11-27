@@ -1,4 +1,4 @@
-FROM registry.gz.cvte.cn/ccloud/elastalert-rest:v0.2.1-4dd50dc3
+FROM 13329252585/elastalert-rest:v0.2.1-e58f1bda
 
 RUN apk add gettext libintl
 
