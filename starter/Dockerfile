@@ -1,10 +1,14 @@
 FROM registry.gz.cvte.cn/ccloud/elastalert-rest:v0.2.1-4dd50dc3
 
-COPY ./starter/start.sh /app/
+RUN apk add gettext libintl
 
-RUN chmod +x /app/start.sh
+COPY ./starter/start.sh /app/elastalert-rest/
 
-WORKDIR /app/
+RUN chmod +x /app/elastalert-rest/start.sh
 
-ENTRYPOINT ["/app/start.sh"]
+WORKDIR /app/elastalert-rest
+
+RUN mkdir -p /opt/elastalert/rules/
+
+ENTRYPOINT ["/app/elastalert-rest/start.sh"]
 
