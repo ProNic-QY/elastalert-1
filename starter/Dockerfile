@@ -1,4 +1,4 @@
-FROM 13329252585/elastalert-rest:v0.2.1-e58f1bda
+FROM seew0nic/elastalert-rest:cvte
 
 RUN apk add gettext libintl
 

@@ -1,3 +1,0 @@
-docker build --pull=true --no-cache=true -f docker/Dockerfile -t 13329252585/elastalert-rest:v0.2.1-e58f1bda .
-
-docker push 13329252585/elastalert-rest:v0.2.1-e58f1bda

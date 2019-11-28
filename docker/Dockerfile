@@ -1,6 +1,4 @@
-FROM 13329252585/elastalert:v0.2.1-0f0a235a
-
-RUN apk add --update --no-cache curl tzdata make libmagic
+FROM seew0nic/elastalert:cvte
 
 COPY ./ /app/elastalert-rest/
 
